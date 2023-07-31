@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-image: url('/assets/images/blurred-bg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: normal;
+  font-size: medium;
+
+  &:hover {
+    border-bottom: 1px solid whitesmoke;
+  }
+
+  &:active {
+    border-bottom: none;
+  }
+}
+
