@@ -31,3 +31,25 @@ a {
   }
 }
 
+.container {
+  width: 80vw;
+  margin : 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  width: 100%;
+  background-color: rgba(245, 245, 245, 0.71);
+
+  padding: 1rem;
+  margin: 1rem;
+
+  border-radius: 1rem;
+}
+
+h2 {
+
+}
+
