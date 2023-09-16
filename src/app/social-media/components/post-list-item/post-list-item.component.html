@@ -1,19 +1,23 @@
 <mat-card>
   <mat-card-header>
     <mat-card-title>
-      <span>
+      <span highlight color="lightblue">
         {{ post.title | titlecase }}
       </span>
     </mat-card-title>
     <mat-card-subtitle>
-      <span> {{post.createdDate | date }}</span>
+      <span> {{post.createdDate | timeAgo }}</span>
     </mat-card-subtitle>
   </mat-card-header>
-  <mat-card-content>
-<!--        <img mat-card-image *ngIf="post.imageUrl as imageUrl" [src]="imageUrl" [alt]="post.title"  >-->
-    <span class="post-content"> {{post.content}}</span>
+  <mat-card-content class="w-90 m-center">
+    <div class = "center mb-1">
+      <img class="m-1" mat-card-image *ngIf="post.imageUrl as imageUrl" [src]="imageUrl" [alt]="post.title">
+    </div>
+    <div>
+      <span class="post-content"> {{post.content |shorten : 100}}</span>
+    </div>
   </mat-card-content>
   <mat-card-actions>
-    <app-comments [comments]="post.comments"></app-comments>
+    <app-comments [comments]="post.comments" (newComment)="onNewComment($event)"></app-comments>
   </mat-card-actions>
 </mat-card>

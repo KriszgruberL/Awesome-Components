@@ -49,7 +49,31 @@ a {
   border-radius: 1rem;
 }
 
-h2 {
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.m-center {
+  margin: 0 auto;
+}
+
+.mb{
+  &-1{
+    margin-bottom: 1rem;
+  }
+  &-2{
+    margin-bottom: 2rem;
+  }
+}
+
+.m{
+  &-1{
+    margin: 1rem;
+  }
+  &-2{
+    margin: 2rem;
+  }
 }
 
