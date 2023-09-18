@@ -4,6 +4,7 @@ import { HeaderComponent } from './components/header/header.component';
 import {SharedModule} from "../shared/shared.module";
 import {RouterLink} from "@angular/router";
 import {HttpClientModule} from "@angular/common/http";
+import {BrowserAnimationsModule, NoopAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import {HttpClientModule} from "@angular/common/http";
     SharedModule,
     RouterLink,
     HttpClientModule,
+    BrowserAnimationsModule,
   ],
   exports : [
     HeaderComponent

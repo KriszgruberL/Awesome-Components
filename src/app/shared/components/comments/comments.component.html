@@ -8,10 +8,16 @@
 </div>
 
 
-<mat-list *ngIf="comments.length">
+<mat-list *ngIf="comments.length" @list>
   <h2 matSubheader> Commentaires</h2>
-  <mat-list-item *ngFor="let comment of comments">
-    <span mat-line> {{comment.comment}}</span>
-    <span mat-line> {{comment.createdDate | timeAgo }}</span>
+  <mat-list-item class="m-1"
+    *ngFor="let comment of comments, let i = index"
+    [@listItem]="animationStates[i]"
+    (mouseenter)="onListItemMouseEnter(i)"
+    (mouseleave)="onListItemMouseLeave(i)"
+
+  >
+    <div><span class="comment-text" mat-line> {{comment.comment}}</span></div>
+    <span class="comment-date small " mat-line> {{comment.createdDate | timeAgo }}</span>
   </mat-list-item>
 </mat-list>

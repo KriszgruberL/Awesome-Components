@@ -33,8 +33,6 @@ import {HighlightDirective} from "./directives/highlight.directive";
     NameFormatPipe,
     TimeAgoPipe,
     HighlightDirective,
-
-
   ]
 })
 export class SharedModule { }
