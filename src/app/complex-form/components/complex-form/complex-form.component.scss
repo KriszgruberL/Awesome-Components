@@ -50,7 +50,7 @@ mat-card-actions {
 }
 
 .form-card {
-  width: 90%;
+  width: 100%;
 }
 
 mat-card-subtitle {
@@ -63,4 +63,8 @@ mat-card-title {
 
 .error-text {
   color: red;
+}
+
+mat-card {
+  padding : 1rem;
 }

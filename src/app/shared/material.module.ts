@@ -9,6 +9,7 @@ import {MatInputModule} from "@angular/material/input";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import {MatRadioModule} from "@angular/material/radio";
+import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 
 @NgModule({
   exports : [
@@ -21,7 +22,8 @@ import {MatRadioModule} from "@angular/material/radio";
     MatInputModule,
     MatGridListModule,
     MatCheckboxModule,
-    MatRadioModule
+    MatRadioModule,
+    MatProgressSpinnerModule
 
     ]
 })
